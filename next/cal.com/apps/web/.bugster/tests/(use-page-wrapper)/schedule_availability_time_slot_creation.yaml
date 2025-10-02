@@ -1,0 +1,13 @@
+name: Schedule availability time slot creation
+page: availability
+page_path: app/(use-page-wrapper)/(main-nav)/availability/page.tsx
+task: Test the user's ability to add a new availability schedule
+steps:
+- Navigate to the availability page
+- Click on the 'Add Schedule' button
+- Enter a name for the new schedule in the input field
+- Select days and time slots for availability
+- Click 'Continue' to save the schedule
+- Verify the new schedule appears in the availability list
+expected_result: A new availability schedule should be created and displayed in the
+  list

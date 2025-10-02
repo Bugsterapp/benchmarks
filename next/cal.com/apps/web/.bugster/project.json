@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "timestamp": 1759448382933,
+    "git": {
+      "branch": "main",
+      "commit": "a1ac5f36f0a34a080cee618e007831215f84e95b"
+    }
+  },
+  "data": {
+    "frameworks": [
+      {
+        "id": "next",
+        "name": "Next.js",
+        "dir_path": "/Users/nacho/Bugster/benchmarks/next/cal.com/apps/web/"
+      }
+    ]
+  }
+}

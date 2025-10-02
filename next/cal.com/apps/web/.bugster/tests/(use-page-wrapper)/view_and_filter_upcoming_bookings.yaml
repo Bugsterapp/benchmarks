@@ -1,0 +1,13 @@
+name: View and filter upcoming bookings
+page: bookings/upcoming
+page_path: app/(use-page-wrapper)/(main-nav)/bookings/[status]/page.tsx
+task: Test the ability to view and filter upcoming bookings
+steps:
+- Navigate to the bookings page with 'upcoming' status
+- Verify upcoming bookings are displayed in a list
+- Click on the filter dropdown
+- Select a specific event type filter
+- Verify the booking list updates to show only bookings of the selected event type
+- Clear the filter
+- Verify all upcoming bookings are displayed again
+expected_result: Bookings should be filtered according to selected criteria

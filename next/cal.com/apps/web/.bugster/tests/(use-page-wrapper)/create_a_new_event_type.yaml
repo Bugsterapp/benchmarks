@@ -1,0 +1,14 @@
+name: Create a new event type
+page: event-types
+page_path: app/(use-page-wrapper)/(main-nav)/event-types/page.tsx
+task: Test the ability to create a new event type with basic settings
+steps:
+- Navigate to the event types page
+- Click on the 'New Event Type' button
+- Enter a name and description for the event type
+- Set the event duration to 30 minutes
+- Configure basic availability settings
+- Click 'Create' to save the event type
+- Verify the new event type appears in the list
+expected_result: A new event type should be created and appear in the event types
+  list

@@ -1,0 +1,13 @@
+name: Update user profile information
+page: settings/my-account/profile
+page_path: app/(use-page-wrapper)/settings/(settings-layout)/my-account/profile/page.tsx
+task: Test the ability to update user profile information
+steps:
+- Navigate to the profile settings page
+- Edit the username field with a new valid username
+- Update the name field with a new name
+- Update the bio field with a new description
+- Click the 'Save' button
+- Verify success message is displayed
+- Reload the page and verify the updated information persists
+expected_result: Profile information should be updated successfully

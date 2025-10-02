@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Add NVM and Homebrew to PATH for Husky hooks
+export PATH="$HOME/.nvm/versions/node/v22.20.0/bin:/opt/homebrew/bin:$PATH"
+
+yarn lint-staged
+
+yarn app-store:build && git add packages/app-store/*.generated.*

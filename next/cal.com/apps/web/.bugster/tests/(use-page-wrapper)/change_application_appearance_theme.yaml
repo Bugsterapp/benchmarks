@@ -1,0 +1,13 @@
+name: Change application appearance theme
+page: settings/my-account/appearance
+page_path: app/(use-page-wrapper)/settings/(settings-layout)/my-account/appearance/page.tsx
+task: Test the ability to change the application theme
+steps:
+- Navigate to the appearance settings page
+- Click on the 'Dark Mode' option
+- Verify the application interface changes to dark mode
+- Click on the 'Light Mode' option
+- Verify the application interface changes to light mode
+- Select 'System' option
+- Verify the application theme matches the system preference
+expected_result: The application theme should change according to selection

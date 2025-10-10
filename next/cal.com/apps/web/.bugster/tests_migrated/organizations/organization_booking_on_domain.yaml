@@ -1,0 +1,16 @@
+name: Book event on organization custom domain
+page: /org/[orgSlug]/[user]/[type]
+page_path: app/(booking-page-wrapper)/org/[orgSlug]/[user]/[type]/page.tsx
+task: Verify that bookings work on organization-branded domains
+steps:
+  - Navigate to organization booking page at org subdomain
+  - Select an organization member's event
+  - Choose available time slot
+  - Fill in booking form with guest details
+  - Submit the booking
+  - Verify booking confirmation on org domain
+  - Verify booking appears in organizer's calendar
+  - Verify confirmation email is sent from org domain
+expected_result: Booking is successfully completed on organization domain
+
+

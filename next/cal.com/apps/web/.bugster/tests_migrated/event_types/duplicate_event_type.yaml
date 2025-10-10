@@ -1,0 +1,16 @@
+name: Duplicate an existing event type
+page: /event-types
+page_path: app/(use-page-wrapper)/(main-nav)/event-types/page.tsx
+task: Verify that users can duplicate existing event types to create similar ones
+steps:
+  - Login and navigate to /event-types
+  - Locate an existing event type
+  - Click the event type options menu (three dots)
+  - Click "Duplicate" option
+  - Verify a copy of the event type is created
+  - Verify duplicated event has "(Copy)" suffix in title
+  - Click on duplicated event to edit
+  - Verify all settings are copied from original
+expected_result: Event type is successfully duplicated with all original settings preserved
+
+

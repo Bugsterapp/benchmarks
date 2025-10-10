@@ -1,0 +1,18 @@
+name: Create a team event type
+page: /event-types
+page_path: app/(use-page-wrapper)/(main-nav)/event-types/page.tsx
+task: Verify that team event types can be created for shared bookings
+steps:
+  - Login as team member
+  - Navigate to /event-types
+  - Click "New event type" dropdown
+  - Select "New team event type"
+  - Choose team from dropdown
+  - Enter event title "Team Consultation"
+  - Set duration to 60 minutes
+  - Select scheduling type (Round Robin/Collective)
+  - Click "Continue" to create
+  - Verify team event type appears in list with team badge
+expected_result: Team event type is created and visible to all team members
+
+

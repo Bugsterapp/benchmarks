@@ -1,0 +1,17 @@
+name: Create a new booking through public booking page
+page: /[user]/[type]
+page_path: app/(booking-page-wrapper)/[user]/[type]/page.tsx
+task: Verify that guests can successfully book an available time slot
+steps:
+  - Navigate to a user's public booking page
+  - Click "Next month" to view available dates
+  - Select the first available day
+  - Click on the first available time slot
+  - Fill in attendee name in the booking form
+  - Fill in valid email address
+  - Add optional notes
+  - Click "Confirm" button to submit booking
+  - Verify redirect to success page with booking confirmation
+expected_result: Booking is successfully created and confirmation page displays booking details
+
+

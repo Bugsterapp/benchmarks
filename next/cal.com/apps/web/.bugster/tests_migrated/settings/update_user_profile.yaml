@@ -1,0 +1,15 @@
+name: Update user profile information
+page: /settings/my-account/profile
+page_path: app/(use-page-wrapper)/(main-nav)/settings/my-account/profile/page.tsx
+task: Verify that users can update their profile details
+steps:
+  - Login and navigate to /settings/my-account/profile
+  - Update the name field with a new name
+  - Update the bio field with new bio text
+  - Click "Update" button to save changes
+  - Verify success toast notification appears
+  - Reload the page
+  - Verify updated name and bio are persisted
+expected_result: Profile information is successfully updated and saved
+
+

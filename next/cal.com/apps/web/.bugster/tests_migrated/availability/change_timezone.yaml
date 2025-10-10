@@ -1,0 +1,17 @@
+name: Update schedule timezone settings
+page: /availability
+page_path: app/(use-page-wrapper)/(main-nav)/availability/page.tsx
+task: Verify that users can change the timezone for their availability schedule
+steps:
+  - Login and navigate to /availability
+  - Click on a schedule to edit
+  - Click on the timezone dropdown
+  - Search for "New York" in timezone field
+  - Select "America/New_York" from options
+  - Click "Save" to persist changes
+  - Verify success message appears
+  - Reload the page
+  - Verify timezone is persisted as America/New_York
+expected_result: Schedule timezone is successfully updated and persisted
+
+

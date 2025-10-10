@@ -1,0 +1,17 @@
+name: Change account username
+page: /settings/my-account/profile
+page_path: app/(use-page-wrapper)/(main-nav)/settings/my-account/profile/page.tsx
+task: Verify that users can change their username
+steps:
+  - Login and navigate to profile settings
+  - Click on the username input field
+  - Clear existing username
+  - Enter a new unique username
+  - Click "Update username" button
+  - Confirm the username change in modal dialog
+  - Click "Save" to finalize
+  - Verify success message appears
+  - Verify new username in database
+expected_result: Username is successfully changed and public booking link updates
+
+

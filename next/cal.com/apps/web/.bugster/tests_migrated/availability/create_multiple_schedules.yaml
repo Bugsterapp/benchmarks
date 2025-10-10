@@ -1,0 +1,17 @@
+name: Create additional availability schedules
+page: /availability
+page_path: app/(use-page-wrapper)/(main-nav)/availability/page.tsx
+task: Verify that users can create multiple named schedules for different purposes
+steps:
+  - Login and navigate to /availability
+  - Click "New schedule" button
+  - Enter schedule name "Evening Hours"
+  - Click "Create" to add new schedule
+  - Configure different working hours for evening
+  - Set Monday-Friday 6:00 PM - 9:00 PM
+  - Click "Save" button
+  - Navigate back to availability list
+  - Verify "Evening Hours" schedule appears in list
+expected_result: New schedule is created and can be assigned to specific event types
+
+

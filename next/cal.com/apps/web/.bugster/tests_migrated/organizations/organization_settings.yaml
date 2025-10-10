@@ -1,0 +1,18 @@
+name: Configure organization settings
+page: /settings/organizations/[id]/profile
+page_path: app/(use-page-wrapper)/(main-nav)/settings/organizations/[id]/profile/page.tsx
+task: Verify that organization admins can update organization settings
+steps:
+  - Login as organization admin
+  - Navigate to organization settings
+  - Update organization name
+  - Update organization bio
+  - Update organization logo
+  - Toggle privacy settings (public/private)
+  - Click "Update" to save
+  - Verify success message appears
+  - Navigate to organization public page
+  - Verify updated information is displayed
+expected_result: Organization settings are updated and reflected on public page
+
+

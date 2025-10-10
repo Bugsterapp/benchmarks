@@ -1,0 +1,16 @@
+name: Cancel an upcoming booking
+page: /bookings/upcoming
+page_path: app/(use-page-wrapper)/(main-nav)/bookings/[status]/page.tsx
+task: Verify that users can cancel their upcoming bookings
+steps:
+  - Login as a user with at least one upcoming booking
+  - Navigate to /bookings/upcoming page
+  - Click on the booking actions dropdown
+  - Click "Cancel" option
+  - Enter a cancellation reason in the text field
+  - Click "Confirm Cancellation" button
+  - Verify cancelled booking confirmation message appears
+  - Verify booking is removed from upcoming bookings list
+expected_result: Booking is successfully cancelled and no longer appears in upcoming bookings
+
+

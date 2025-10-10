@@ -1,0 +1,15 @@
+name: User logout and session termination
+page: /auth/logout
+page_path: app/(use-page-wrapper)/auth/logout/page.tsx
+task: Verify that users can successfully logout and their session is terminated
+steps:
+  - Login with valid credentials
+  - Click on user dropdown menu in the top navigation
+  - Click the "Sign out" button
+  - Verify redirect to logout confirmation page
+  - Verify "You've been logged out" message appears
+  - Attempt to access a protected page like /event-types
+  - Verify redirect back to login page
+expected_result: User session is terminated and access to protected pages is denied
+
+

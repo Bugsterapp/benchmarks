@@ -1,0 +1,16 @@
+name: Remove date-specific availability override
+page: /availability
+page_path: app/(use-page-wrapper)/(main-nav)/availability/page.tsx
+task: Verify that users can delete previously created date overrides
+steps:
+  - Login and navigate to /availability
+  - Click on schedule with existing date overrides
+  - Scroll to "Date overrides" section
+  - Locate an existing date override
+  - Click the delete button for that override
+  - Click "Save" to persist changes
+  - Verify override is removed from the list
+  - Check that the date is now available again for bookings
+expected_result: Date override is successfully removed and date becomes available
+
+

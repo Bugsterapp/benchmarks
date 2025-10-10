@@ -1,0 +1,14 @@
+name: New user signup flow
+page: /signup
+page_path: app/(use-page-wrapper)/signup/page.tsx
+task: Verify that new users can successfully create an account
+steps:
+  - Navigate to the signup page at /signup
+  - Enter a unique username in the username field
+  - Enter a valid email address
+  - Enter a strong password that meets requirements
+  - Submit the signup form
+  - Verify account creation and redirect to onboarding
+expected_result: New user account is created and user is redirected to the onboarding flow
+
+

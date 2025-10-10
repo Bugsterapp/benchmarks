@@ -1,0 +1,17 @@
+name: Create booking with multiple guest attendees
+page: /[user]/[type]
+page_path: app/(booking-page-wrapper)/[user]/[type]/page.tsx
+task: Verify that bookings can be created with multiple guest email addresses
+steps:
+  - Navigate to a public booking page
+  - Select an available time slot next month
+  - Fill in primary attendee name and email
+  - Click "Add guests" button
+  - Enter first additional guest email address
+  - Click "Add another guest" button
+  - Enter second additional guest email address
+  - Click "Confirm" to submit the booking
+  - Verify success page shows all three attendee emails
+expected_result: Booking is created with all guest attendees listed on confirmation page
+
+

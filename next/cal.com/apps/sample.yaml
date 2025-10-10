@@ -1,0 +1,24 @@
+name: Create new PUE income invoice (Global)
+page: invoices
+page_path: src/app/pages/InvoicePage.tsx
+task: Verify user can create a new invoice
+steps:
+- For the entirety of this workflow disregard any console error that doesn't block user interaction
+- Navigate to invoices page
+- Click 'Crear' button
+- Select 'Crear factura' option
+- Click 'Factura de ingreso' button
+- Click 'Siguiente' button
+- Type 'Pub' in client search field
+- Select option that contains a 'Publico en general' text
+- If no Series is preloaded, create a new 'I' series. If creation fails, just make sure that there is a series selected
+- Select 'Gastos en General' from 'Uso del CFDI' dropdown
+- Select any payment form from 'Forma de pago' dropdown
+- Open 'Ver opciones adicionales' section
+- Turn on '¿Generar factura global?' toggle
+- Fill the 'Periodicidad' field with  'Mensual' value from the dropdown
+- Fill the 'Mes' field with 'Octubre' value from the dropdown
+- Fill the 'Año' field with '2025'
+- Select any service in the 'Producto/Servicio' section
+- Click 'Crear factura' button
+expected_result: Success screen is rendered, new invoice is created and appears in the invoices list

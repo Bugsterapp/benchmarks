@@ -1,0 +1,15 @@
+name: Configure event type with video conferencing location
+page: /event-types/[id]
+page_path: app/(use-page-wrapper)/(main-nav)/event-types/[type]/page.tsx
+task: Verify that event types can be configured with different location options
+steps:
+  - Login and navigate to an event type settings page
+  - Scroll to "Location" section
+  - Click "Add location" button
+  - Select "Cal Video" from location options
+  - Verify location is added to the event
+  - Click "Update" button to save changes
+  - Verify "Event type updated successfully" message appears
+expected_result: Event type is updated with selected video conferencing location
+
+

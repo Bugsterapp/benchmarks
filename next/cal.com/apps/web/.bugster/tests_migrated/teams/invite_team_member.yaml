@@ -1,0 +1,17 @@
+name: Invite a new member to team
+page: /settings/teams/[id]/members
+page_path: app/(use-page-wrapper)/(main-nav)/settings/teams/[id]/members/page.tsx
+task: Verify that team owners can invite new members via email
+steps:
+  - Login as team owner
+  - Navigate to team members settings
+  - Click "Invite member" button
+  - Enter invitee email address
+  - Select member role (Member/Admin)
+  - Click "Send invitation" button
+  - Verify success message appears
+  - Check that pending invitation appears in members list
+  - Verify invitation email is sent to invitee
+expected_result: Team invitation is sent and appears as pending in members list
+
+

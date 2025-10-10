@@ -1,0 +1,16 @@
+name: Configure weekly working hours schedule
+page: /availability
+page_path: app/(use-page-wrapper)/(main-nav)/availability/page.tsx
+task: Verify that users can set their weekly availability schedule
+steps:
+  - Login and navigate to /availability
+  - Click on the default schedule to edit
+  - Toggle on "Sunday" to make it available
+  - Toggle on "Saturday" to make it available
+  - Click "Save" button
+  - Verify success toast message appears
+  - Navigate to public booking page
+  - Verify Sunday and Saturday now show available slots
+expected_result: Working hours are updated and reflected on public booking page
+
+

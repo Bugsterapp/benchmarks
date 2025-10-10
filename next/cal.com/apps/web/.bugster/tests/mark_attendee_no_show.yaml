@@ -1,0 +1,16 @@
+name: Mark attendee as no-show in past bookings
+page: /bookings/past
+page_path: app/(use-page-wrapper)/(main-nav)/bookings/[status]/page.tsx
+task: Verify that organizers can mark attendees as no-show for past meetings
+steps:
+  - Login as an organizer user
+  - Navigate to /bookings/past
+  - Locate a past booking with attendees
+  - Click on the first guest/attendee name
+  - Click "Mark as no-show" option from dropdown
+  - Verify the attendee is marked with no-show status
+  - Click the same guest again
+  - Verify "Unmark no-show" option is now visible
+expected_result: Attendee no-show status is successfully toggled and persisted
+
+

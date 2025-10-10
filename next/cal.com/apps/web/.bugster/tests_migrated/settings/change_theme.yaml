@@ -1,0 +1,16 @@
+name: Change application theme to dark mode
+page: /settings/my-account/appearance
+page_path: app/(use-page-wrapper)/(main-nav)/settings/my-account/appearance/page.tsx
+task: Verify that users can switch between light and dark themes
+steps:
+  - Login and navigate to appearance settings
+  - Locate "Dashboard theme" section
+  - Click on "Dark" theme option
+  - Click "Update" button to save
+  - Verify success toast appears
+  - Verify HTML element has "dark" class applied
+  - Check localStorage for theme preference
+  - Reload page and verify dark theme persists
+expected_result: Application theme is changed to dark mode and preference is saved
+
+

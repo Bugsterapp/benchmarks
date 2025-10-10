@@ -1,0 +1,17 @@
+name: Create a new custom event type
+page: /event-types
+page_path: app/(use-page-wrapper)/(main-nav)/event-types/page.tsx
+task: Verify that users can create a new event type with custom settings
+steps:
+  - Login as a user
+  - Navigate to /event-types page
+  - Click "New event type" button
+  - Enter event type title (e.g., "30 Minute Meeting")
+  - Select event duration (30 minutes)
+  - Add event description
+  - Click "Continue" to create event type
+  - Verify redirect to event type settings page
+  - Verify new event type appears in the event types list
+expected_result: New event type is successfully created and available for bookings
+
+

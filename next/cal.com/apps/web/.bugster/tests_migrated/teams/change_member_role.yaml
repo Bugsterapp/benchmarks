@@ -1,0 +1,18 @@
+name: Change team member role permissions
+page: /settings/teams/[id]/members
+page_path: app/(use-page-wrapper)/(main-nav)/settings/teams/[id]/members/page.tsx
+task: Verify that team owners can change member roles between Member and Admin
+steps:
+  - Login as team owner
+  - Navigate to team members settings
+  - Locate a member with "Member" role
+  - Click member options menu
+  - Click "Change role" option
+  - Select "Admin" from role dropdown
+  - Click "Save" to confirm
+  - Verify member role updates to "Admin" in list
+  - Login as that member
+  - Verify they now have admin permissions
+expected_result: Member role is successfully updated with new permissions
+
+

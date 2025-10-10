@@ -1,0 +1,16 @@
+name: Create a new team
+page: /settings/teams/new
+page_path: app/(use-page-wrapper)/(main-nav)/settings/teams/new/page.tsx
+task: Verify that users can create a new team
+steps:
+  - Login and navigate to /settings/teams/new
+  - Enter team name in "Team name" field
+  - Enter team slug in "Team URL" field
+  - Click "Continue" button to create team
+  - Verify redirect to team settings page
+  - Verify team appears in teams list
+  - Navigate to team page at /team/[slug]
+  - Verify team page is accessible
+expected_result: New team is successfully created and accessible
+
+

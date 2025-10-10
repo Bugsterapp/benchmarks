@@ -1,0 +1,18 @@
+name: Invite user to join organization
+page: /settings/organizations/[id]/members
+page_path: app/(use-page-wrapper)/(main-nav)/settings/organizations/[id]/members/page.tsx
+task: Verify that organization admins can invite users to the organization
+steps:
+  - Login as organization admin
+  - Navigate to organization members page
+  - Click "Invite member" button
+  - Enter user email address
+  - Select role (Member/Admin)
+  - Click "Send invitation"
+  - Verify invitation email is sent
+  - Verify pending invitation appears in members list
+  - User accepts invitation from email link
+  - Verify user becomes organization member
+expected_result: User receives invitation and can join organization
+
+

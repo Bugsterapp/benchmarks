@@ -1,0 +1,17 @@
+name: Reschedule an existing confirmed booking
+page: /bookings/upcoming
+page_path: app/(use-page-wrapper)/(main-nav)/bookings/[status]/page.tsx
+task: Verify that users can reschedule their existing bookings to a new time
+steps:
+  - Login as a user with at least one upcoming booking
+  - Navigate to /bookings/upcoming
+  - Click on the actions dropdown for a booking
+  - Click "Reschedule" option
+  - Select a new available date next month
+  - Select a different time slot
+  - Provide a reason for rescheduling
+  - Click "Confirm Reschedule" button
+  - Verify redirect to updated booking success page
+expected_result: Booking is successfully rescheduled and updated confirmation is displayed
+
+

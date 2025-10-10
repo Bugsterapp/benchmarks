@@ -1,0 +1,17 @@
+name: Remove a member from team
+page: /settings/teams/[id]/members
+page_path: app/(use-page-wrapper)/(main-nav)/settings/teams/[id]/members/page.tsx
+task: Verify that team admins can remove members from the team
+steps:
+  - Login as team admin
+  - Navigate to team members page
+  - Locate a team member to remove
+  - Click member options menu (three dots)
+  - Click "Remove from team" option
+  - Confirm removal in confirmation dialog
+  - Verify member is removed from members list
+  - Login as removed member
+  - Verify they no longer have access to team resources
+expected_result: Member is successfully removed from team and loses access
+
+

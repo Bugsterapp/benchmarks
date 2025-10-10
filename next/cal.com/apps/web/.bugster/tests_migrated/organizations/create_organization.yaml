@@ -1,0 +1,18 @@
+name: Create a new organization
+page: /settings/organizations/new
+page_path: app/(use-page-wrapper)/(main-nav)/settings/organizations/new/page.tsx
+task: Verify that users can create a new organization
+steps:
+  - Login as eligible user
+  - Navigate to organization creation page
+  - Enter organization name
+  - Enter organization slug for URL
+  - Enter admin email for verification
+  - Click "Continue" to create organization
+  - Verify email verification is sent
+  - Verify organization is created in database
+  - Navigate to organization settings
+  - Verify organization details are correct
+expected_result: Organization is successfully created and admin receives verification email
+
+

@@ -1,0 +1,16 @@
+name: Configure booking limits on event type
+page: /event-types/[id]
+page_path: app/(use-page-wrapper)/(main-nav)/event-types/[type]/page.tsx
+task: Verify that event types can have booking frequency limits configured
+steps:
+  - Login and navigate to event type settings
+  - Click on "Limits" tab
+  - Enable "Limit booking frequency" toggle
+  - Set "2 bookings per day" limit
+  - Set "5 bookings per week" limit
+  - Click "Update" button to save
+  - Navigate to the public booking page
+  - Verify booking limits are enforced after limits are reached
+expected_result: Booking limits are successfully configured and prevent over-booking
+
+

@@ -1,0 +1,16 @@
+name: Delete an event type
+page: /event-types
+page_path: app/(use-page-wrapper)/(main-nav)/event-types/page.tsx
+task: Verify that users can delete event types they no longer need
+steps:
+  - Login and navigate to /event-types
+  - Locate an event type to delete
+  - Click the event type options menu
+  - Click "Delete" option
+  - Confirm deletion in the confirmation dialog
+  - Verify event type is removed from the list
+  - Navigate to the former public booking URL
+  - Verify 404 or "Event type not found" message
+expected_result: Event type is successfully deleted and no longer accessible
+
+

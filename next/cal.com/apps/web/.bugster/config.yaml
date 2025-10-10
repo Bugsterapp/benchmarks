@@ -8,10 +8,10 @@ project_id: web-1759448345
 base_url: "http://localhost:3000"
 
 # Project Authentication
-# credentials:
-#   - id: admin
-#     username: ${BUGSTER_USERNAME}
-#     password: ${BUGSTER_PASSWORD}
+credentials:
+  - id: admin
+    username: ${BUGSTER_USERNAME}
+    password: ${BUGSTER_PASSWORD}
 
 # Vercel Configuration
 # You can create the Vercel Protection Bypass Secret for Automation in this link:

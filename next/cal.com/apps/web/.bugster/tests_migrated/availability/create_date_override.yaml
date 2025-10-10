@@ -1,0 +1,18 @@
+name: Add date-specific availability override
+page: /availability
+page_path: app/(use-page-wrapper)/(main-nav)/availability/page.tsx
+task: Verify that users can create date overrides to mark specific dates as unavailable
+steps:
+  - Login and navigate to /availability
+  - Click on a schedule to edit
+  - Click "Add date override" button
+  - Click "Next month" to navigate to next month
+  - Select a specific date
+  - Click "Mark as unavailable" option
+  - Click "Add override" to confirm
+  - Click "Save" to persist changes
+  - Navigate to availability troubleshooter for that date
+  - Verify the date shows as blocked/unavailable
+expected_result: Date override is created and date is marked unavailable for bookings
+
+

@@ -1,0 +1,18 @@
+name: Create and manage teams within organization
+page: /settings/organizations/[id]/teams
+page_path: app/(use-page-wrapper)/(main-nav)/settings/organizations/[id]/teams/page.tsx
+task: Verify that organization admins can create and manage sub-teams
+steps:
+  - Login as organization admin
+  - Navigate to organization teams page
+  - Click "Create team" button
+  - Enter team name and slug
+  - Assign team members from organization
+  - Click "Create" to save
+  - Verify team appears in organization teams list
+  - Click on team to manage
+  - Add/remove team members
+  - Verify changes are saved
+expected_result: Sub-team is created within organization and can be managed
+
+

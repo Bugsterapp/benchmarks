@@ -1,0 +1,14 @@
+name: Two-factor authentication login flow
+page: /auth/login
+page_path: app/(use-page-wrapper)/auth/login/page.tsx
+task: Verify that users with 2FA enabled can successfully complete the two-step authentication process
+steps:
+  - Navigate to login page and enter valid credentials
+  - Submit the login form
+  - Verify 2FA code input screen appears
+  - Enter valid 6-digit TOTP code
+  - Submit the 2FA code
+  - Verify successful authentication and redirect to dashboard
+expected_result: User with 2FA enabled successfully authenticates and accesses their account
+
+

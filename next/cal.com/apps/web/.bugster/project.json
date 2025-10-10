@@ -13,6 +13,11 @@
         "name": "Next.js",
         "dir_path": "/Users/nacho/Bugster/benchmarks/next/cal.com/apps/web/"
       }
-    ]
+    ],
+    "commands": {
+      "test": {
+        "firstExecuted": true
+      }
+    }
   }
 }

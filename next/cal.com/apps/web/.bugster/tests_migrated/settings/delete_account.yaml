@@ -1,0 +1,17 @@
+name: Delete user account permanently
+page: /settings/my-account/profile
+page_path: app/(use-page-wrapper)/(main-nav)/settings/my-account/profile/page.tsx
+task: Verify that users can permanently delete their account
+steps:
+  - Login and navigate to profile settings
+  - Scroll to "Danger Zone" section
+  - Click "Delete account" button
+  - Enter password in confirmation dialog
+  - Click "Delete my account" to confirm
+  - Verify redirect to logout page
+  - Verify "You've been logged out" message
+  - Attempt to login with deleted account
+  - Verify login fails with appropriate error
+expected_result: Account is permanently deleted and cannot be accessed
+
+
